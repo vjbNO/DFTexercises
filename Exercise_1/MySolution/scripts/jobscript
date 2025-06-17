@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH --job-name=test_VASP
+#SBATCH --output=log
+#SBATCH --partition=tue.default.q
+#SBATCH --time=01:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=2G
+
+module load VASP/6.4.2-foss-2023a-VASPsol-VTST
+
+mpirun -np 1 vasp_std
