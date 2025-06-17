@@ -1,0 +1,25 @@
+SYSTEM = MgO rocksalt structure
+
+### Parallelization
+NCORE = 2
+KPAR = 1
+
+### SCF
+ENCUT = 500
+EDIFF = 1E-8
+NELM = 60
+ISYM = 2
+ISTART = 0
+ICHARG = 2
+
+### Partial occupancies
+ISMEAR = 0
+SIGMA = 0.1
+
+### Spin polarization
+ISPIN = 1
+
+### Accuracy
+
+PREC = Accurate
+ADDGRID = .TRUE.
